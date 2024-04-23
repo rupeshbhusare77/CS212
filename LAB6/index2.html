@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Almighty team</title>
+</head>
+<body >
+    <h1>Page 2</h1>
+    <h1>Hello littles!</h1>
+    <p>Check this out.</p>
+    
+    <h2>Our Team</h2>
+    <ul>
+        <li><a>Rupesh Bhusare</a></li>
+        <li><a>Vaibhav Gupta</a></li>
+    </ul>
+    
+    <h2>External Link</h2>
+    <p>Visit <a href="https://iitgoa.ac.in/">IIT Goa</a> .</p>
+    <p>Visit <a href="index.html">First page</a>.</p>
+    <button id="changeImageButton">Change Image</button>
+    <h2>Image</h2>
+    <img id="memeImage" src="image3.png" alt="meme Photo">
+    
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById("memeImage");
+            if (image.src.endsWith("image3.png")) {
+                image.src = "image4.jpeg";
+            } else {
+                image.src = "image3.png";
+            }
+        }
+
+    
+        var button = document.getElementById("changeImageButton");
+        button.addEventListener("click", changeImage);
+    </script>
+</body>
+</html>
